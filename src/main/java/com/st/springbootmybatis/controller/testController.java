@@ -37,6 +37,7 @@ public class testController {
     @GetMapping("/emp")
     public Employee insertEmp(Employee employee){
         empMapper.InsertEmp(employee);
+        System.out.println(3);
         return employee;
     }
 

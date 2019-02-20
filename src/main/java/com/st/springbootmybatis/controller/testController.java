@@ -27,6 +27,7 @@ public class testController {
     public Department insertDept(Department department){
         System.out.println(department.getDepartmentName());
         departmentMapper.insertDept(department);
+        System.out.println(1);
         return department;
     }
     @GetMapping("/emp/{id}")

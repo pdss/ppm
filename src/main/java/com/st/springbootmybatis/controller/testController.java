@@ -27,8 +27,6 @@ public class testController {
     public Department insertDept(Department department){
         System.out.println(department.getDepartmentName());
         departmentMapper.insertDept(department);
-        System.out.println(1);
-        System.out.println(2);
         return department;
     }
     @GetMapping("/emp/{id}")
@@ -38,7 +36,6 @@ public class testController {
     @GetMapping("/emp")
     public Employee insertEmp(Employee employee){
         empMapper.InsertEmp(employee);
-        System.out.println(3);
         return employee;
     }
 
